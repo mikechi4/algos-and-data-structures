@@ -28,7 +28,7 @@ const selectionSort = (arr) => {
 
     return arr;
 }
+//selectionSort([34,22,10,19,17])
 
-// [5,2,9,0,1,4,6]
-//  m, nm
-// [2, 5, 9, 0, 1, 4, 6]
+// big O Not da best
+// O(n^2)
