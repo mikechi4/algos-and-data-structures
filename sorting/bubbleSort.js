@@ -8,6 +8,8 @@ const swap = (arr, indexA, indexB) => {
 }
 
 const bubbleSort = (arr) => {
+    // optimizing function here. if the array is already kinda sorted, this will prevent us from iterating through pieces that we know are already sorted
+    let noSwaps = true;
     // loop w variablee i from end to beginning
     for (var i = arr.length; i > 0; i--) {
         // start w/ a nested loop from beginning to j - 1 
@@ -15,8 +17,10 @@ const bubbleSort = (arr) => {
             // if arr[j] > arr[j+1] swap!
             if (arr[j] > arr[j + 1]) {
                 swap(arr, j, j + 1)
+                noSwaps = false;
             }
         }
+        if (noSwaps) break;
     }
     // return sortd array
     return arr;
@@ -24,6 +28,6 @@ const bubbleSort = (arr) => {
 
 bubbleSort([37, 45, 29, 8]);
 
+bubbleSort([8, 1, 2, 3, 4, 5, 6, 7]);
 
-
-
+// big o? O(n)
