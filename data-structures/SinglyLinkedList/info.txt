@@ -1,0 +1,6 @@
+// ===== What is a linked list 
+// data structure containing head, tail, and lenth
+// unindexed list connected one way via 'nodes'
+// nodes are connected w/ a NEXT pointer 
+// random accessed is not allowed
+// works well w/ huge data sets that you dont need random access
